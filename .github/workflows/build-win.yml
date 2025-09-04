@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  build-macos:
+  build-win:
     runs-on: windows-latest
 
     steps:
@@ -19,11 +19,11 @@ jobs:
         with:
           node-version: 22
 
-      - name: Install dependencies
+      - name: Install project dependencies
         run: npm install
 
-      - name: Install nexe
-        run: npm install -g nexe
+      - name: Install build dependencies
+        run: npm install -g windows-build-tools
 
       - name: Build binary for windows
         run: npx nexe --build -o myapp-win
