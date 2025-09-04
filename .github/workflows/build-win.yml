@@ -22,9 +22,6 @@ jobs:
       - name: Install project dependencies
         run: npm install
 
-      - name: Install build dependencies
-        run: npm install windows-build-tools
-
       - name: Build binary for windows
         run: npx nexe --build -o myapp-win
 
