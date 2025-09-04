@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "express": "^5.1.0",
+    "open": "^10.2.0",
+    "serialport": "^13.0.0"
+  },
+  "devDependencies": {
+    "nexe": "^5.0.0-beta.4"
+  },
+  "scripts": {
+    "build": "npx nexe --build"
+  }
+}
