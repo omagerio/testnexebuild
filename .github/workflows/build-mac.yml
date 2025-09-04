@@ -23,7 +23,7 @@ jobs:
         run: npm install
 
       - name: Build binary for macOS
-        run: npx nexe --build -o myapp-macos --verbose
+        run: npx nexe -o myapp-macos --verbose
 
       - name: Upload binary artifact
         uses: actions/upload-artifact@v4

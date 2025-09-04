@@ -23,7 +23,7 @@ jobs:
         run: npm install
 
       - name: Build binary for windows
-        run: npx nexe --build -o myapp-win
+        run: npx nexe -o myapp-win
 
       - name: Upload binary artifact
         uses: actions/upload-artifact@v4
